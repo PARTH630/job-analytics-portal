@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB ANALYTICS PORTAL</title>
+    <style>
+      :root {
+        --neon: #00f9ff;
+        --purple: #8e44ad;
+        --bg-dark: #0a0f1f;
+        --glass: rgba(255, 255, 255, 0.05);
+        --glass-border: rgba(255, 255, 255, 0.15);
+      }
+  
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+  
+      body {
+        font-family: 'Orbitron', sans-serif;
+        background: radial-gradient(ellipse at top, #0f2027 0%, #203a43 50%, #0a0f1f 100%);
+        color: var(--neon);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        padding: 2rem 1rem;
+        overflow-x: hidden;
+        background-attachment: fixed;
+        animation: backgroundPulse 20s infinite linear;
+      }
+  
+      @keyframes backgroundPulse {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+  
+      h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        background: linear-gradient(90deg, #00f9ff, #f72585, #00f9ff);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: titleGlow 6s ease-in-out infinite;
+        letter-spacing: 3px;
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+      }
+  
+      @keyframes titleGlow {
+        0%, 100% { background-position: 0% center; }
+        50% { background-position: 100% center; }
+      }
+  
+      .tableauPlaceholder {
+        width: 100%;
+        max-width: 1200px;
+        border-radius: 20px;
+        background: var(--glass);
+        backdrop-filter: blur(30px);
+        border: 2px solid var(--glass-border);
+        box-shadow: 0 0 40px rgba(0, 255, 255, 0.25), 0 0 10px rgba(255, 255, 255, 0.05);
+        overflow: hidden;
+        position: relative;
+        transition: all 0.4s ease-in-out;
+      }
+  
+      .tableauPlaceholder:hover {
+        box-shadow: 0 0 60px rgba(0, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.08);
+        transform: scale(1.02);
+      }
+  
+      .tableauPlaceholder::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        z-index: -1;
+        background: linear-gradient(135deg, #00f9ff, #f72585, #00f9ff);
+        background-size: 400% 400%;
+        filter: blur(25px);
+        opacity: 0.3;
+        animation: neonFlow 8s ease infinite;
+        border-radius: 20px;
+      }
+  
+      @keyframes neonFlow {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+  
+      object.tableauViz {
+        width: 100%;
+        height: 80vh;
+        border: none;
+      }
+  
+      @media (max-width: 1024px) {
+        h1 {
+          font-size: 2.8rem;
+        }
+        object.tableauViz {
+          height: 75vh;
+        }
+      }
+  
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2.2rem;
+        }
+        object.tableauViz {
+          height: 70vh;
+        }
+        .tableauPlaceholder {
+          border-radius: 14px;
+        }
+      }
+    </style>
+</head>
+<body>
+    <h1>JOB ANALYTICS PORTAL</h1>
+    <div class='tableauPlaceholder' id='viz1744368683515' style='position: relative'>
+        <noscript>
+            <a href='#'>
+                <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;in&#47;intern_17434221556430&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+            <param name='name' value='intern_17434221556430&#47;Dashboard1' />
+            <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;in&#47;intern_17434221556430&#47;Dashboard1&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1744368683515');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if ( divElement.offsetWidth > 800 )
+        { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';}
+        else if ( divElement.offsetWidth > 500 )
+        { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';}
+        else { vizElement.style.width='100%';vizElement.style.height='2077px';}
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</body>
+</html>
